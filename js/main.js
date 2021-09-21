@@ -14,3 +14,16 @@ keyboard: {
   pageUpDown: true,
 },
 });
+
+ymaps.ready(init);
+    function init () {
+    var myMap = new ymaps.Map("map", {
+            center: [34.81795729233179, 33.601589198556155],
+            zoom: 13
+        }, {
+        }),
+        myPlacemark = new ymaps.Placemark([34.81795729233179, 33.601589198556155], {
+        });
+
+    myMap.geoObjects.add(myPlacemark);
+      }
