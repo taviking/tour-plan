@@ -25,25 +25,25 @@
 @media (max-width: 768px)
   .container
     max-width: 576px
-    width: 92%
+    width: 89%
   .navbar
     &__search, &-menu, &__user
       display: none
-    .menu
-      &-button
-        padding: 0
-        height: 11px
+  .menu
+    &-button
+      padding: 0
+      height: 11px
+      width: 16px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      cursor: pointer
+      border: none
+      &__line
         width: 16px
-        display: flex
-        align-items: center
-        justify-content: space-between
-        flex-direction: column
-        cursor: pointer
-        border: none
-        &__line
-          width: 16px
-          height: 1px
-          background-color: $text-color
+        height: 1px
+        background-color: $text-color
   .stars
     flex-basis: auto
   .hotel
@@ -63,10 +63,20 @@
         order: -1
         margin-left: 0
 @media (max-width: 576px)
+  .container
+    width: 89%
   .logo
     max-width: 99px
+  .hotel
+    padding-top: 5px
+    padding-bottom: 40px
+  .navbar
+    &-top
+      padding: 26px 0
 
-@media (max-width: 425px)
+@media (max-width: 325px)
+  .container
+    width: 280px
   .hotel
     &-info
       &__wrapper
@@ -74,6 +84,4 @@
       &__stars
         position: absolute
         top: 4px
-        right: 10%
-      &__description
-        max-width: 80%
+        right: 5%

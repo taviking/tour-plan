@@ -523,6 +523,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .hotel-info__offer {
@@ -591,6 +592,56 @@ template {
   line-height: 18px;
 }
 
+.swiper {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+}
+
+.swiper::after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.slider {
+  max-width: 728px;
+}
+
+.slider-button {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.slider-button--right {
+  right: 18px;
+  background-image: url(../img/arrow-right.svg);
+}
+
+.slider-button--left {
+  left: 18px;
+  background-image: url(../img/arrow-left.svg);
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -629,12 +680,12 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 89%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
-  .navbar .menu-button {
+  .menu-button {
     padding: 0;
     height: 11px;
     width: 16px;
@@ -654,7 +705,7 @@ template {
     cursor: pointer;
     border: none;
   }
-  .navbar .menu-button__line {
+  .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
@@ -691,22 +742,32 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    width: 89%;
+  }
   .logo {
     max-width: 99px;
   }
+  .hotel {
+    padding-top: 5px;
+    padding-bottom: 40px;
+  }
+  .navbar-top {
+    padding: 26px 0;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 325px) {
+  .container {
+    width: 280px;
+  }
   .hotel-info__wrapper {
     position: relative;
   }
   .hotel-info__stars {
     position: absolute;
     top: 4px;
-    right: 10%;
-  }
-  .hotel-info__description {
-    max-width: 80%;
+    right: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
