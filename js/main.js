@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  autoHeight: true,
+  // autoHeight: true,
   // Navigation arrows
   navigation: {
     nextEl: '.slider-button--right',
