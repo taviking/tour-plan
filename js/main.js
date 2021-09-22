@@ -1,11 +1,11 @@
-const swiper = new Swiper('.swiper', {
+const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
-  // autoHeight: true,
+  effect: "coverflow",
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--right',
-    prevEl: '.slider-button--left',
+    nextEl: '.hotel-slider__button--right',
+    prevEl: '.hotel-slider__button--left',
   },
 
 keyboard: {
@@ -15,11 +15,20 @@ keyboard: {
 },
 });
 
-ymaps.ready(init);
-    function init () {
-    var myMap = new ymaps.Map("map", {
-            center: [34.81795729233179, 33.601589198556155],
-            zoom: 13
-        }, {
-        }),
-      }
+
+const reviewsSlider = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+
+keyboard: {
+  enabled: true,
+  onlyInViewport: true,
+  pageUpDown: true,
+},
+});
+
