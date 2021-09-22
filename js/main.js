@@ -22,8 +22,4 @@ ymaps.ready(init);
             zoom: 13
         }, {
         }),
-        myPlacemark = new ymaps.Placemark([34.81795729233179, 33.601589198556155], {
-        });
-
-    myMap.geoObjects.add(myPlacemark);
       }
