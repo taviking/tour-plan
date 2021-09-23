@@ -815,10 +815,6 @@ template {
 .newsletter {
   padding: 98px 0 87px 0;
   position: relative;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .newsletter:before {
@@ -848,14 +844,15 @@ template {
   margin: auto;
 }
 
-.newsletter-titel {
+.newsletter-title {
   color: #ffffff;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
 }
 
-.newsletter-titel__strong {
+.newsletter-title__strong {
   display: block;
   font-weight: 600;
   font-size: 36px;
@@ -867,7 +864,6 @@ template {
   position: relative;
   width: 350px;
   height: 55px;
-  background-repeat: 4px;
   overflow: hidden;
 }
 
@@ -1022,6 +1018,94 @@ template {
   max-width: 537px;
 }
 
+.activities {
+  padding: 60px 0 98px;
+}
+
+.activities__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0 0 57px;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 0 26px 24px;
+}
+
+.card::before {
+  content: '';
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  z-index: 1;
+  margin-top: auto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 18px;
+  max-width: 200px;
+}
+
+.card__button {
+  border-radius: 4px;
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border: none;
+  padding: 7px 22px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1034,6 +1118,10 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1090,6 +1178,17 @@ template {
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
   }
 }
 
@@ -1182,7 +1281,7 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .newsletter-titel__strong {
+  .newsletter-title__strong {
     margin-bottom: 37px;
   }
   .reviews__title {
@@ -1208,6 +1307,10 @@ template {
     margin-right: -100px;
     -webkit-transform: translate(50%, 0px);
             transform: translate(50%, 0px);
+  }
+  .card {
+    width: 48%;
+    height: 255px;
   }
 }
 
@@ -1243,6 +1346,17 @@ template {
   .navbar-button--left {
     left: 6px;
   }
+  .activities {
+    padding: 40px 0;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
+  }
+  .card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1259,14 +1373,14 @@ template {
   .newsletter {
     padding: 76px 0 83px;
   }
-  .newsletter-titel {
+  .newsletter-title {
     max-width: 100%;
     margin: 0;
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
   }
-  .newsletter-titel__strong {
+  .newsletter-title__strong {
     font-weight: 600;
     font-size: 30px;
     line-height: 38px;
