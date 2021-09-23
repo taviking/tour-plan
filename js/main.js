@@ -35,12 +35,12 @@ keyboard: {
 
 $(function(){
 if ($(window).width() > 991) {
-$('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpg',
+$('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg',
   speed: 0.6,
   })
 }
 else {
-  $('.newsletter').parallax({imageSrc: '../img/newsletter-bg.jpg',
+  $('.newsletter').parallax({imageSrc: 'img/newsletter-bg.jpg',
   speed: 0.0,
   })
 }
