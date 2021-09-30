@@ -16,19 +16,19 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar  navbar--fixed">
     <div class="container">
       <div class="navbar-top">
         <a class="logo" href="#">
           <img class="logo__image" src="img/navbar-logo.svg" alt="Logo: Best Tour Plan">
         </a>
-        <form class="search navbar__search" action="#">
+        <form class="search navbar__search navbar__search--mobile-hidden" action="#">
           <input class="search__input" type="text" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
-        <a class="user navbar__user" href="#">
+        <a class="user navbar__user navbar__user--mobile-hidden" href="#">
           <img class="user__avatar" src="img/user-avatar.jpg" alt="User avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -45,6 +45,19 @@
     <nav class="navbar-menu">
       <div class="container navbar-menu__container">
         <ul class="navbar-menu__list">
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible"><a
+              class="user navbar__user navbar__user--mobile-visible" href="#">
+              <img class="user__avatar" src="img/user-avatar.jpg" alt="User avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a></li>
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible">
+            <form class="search navbar__search navbar__search--mobile-visible" action="#">
+              <input class="search__input" type="text" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search">
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">All Deals</a></li>
           <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Hotels</a></li>
           <li class="navbar-menu__item"><a class="navbar-menu__link" href="#">Activities</a></li>
@@ -167,7 +180,7 @@
           <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60560.735301221706!2d-66.0929579662656!3d18.436222422075545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0365dbfc795b5f%3A0xde374027a1cf1d85!2sM%C3%A1re%20St.%20Clair%20Hotel!5e0!3m2!1suk!2sua!4v1632286900465!5m2!1suk!2sua"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <!-- /.map -->
         </div>
@@ -626,7 +639,7 @@
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="#" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*">
-            <input type="phone" class="input footer__input" placeholder="Phone Number*">
+            <input type="text" class="input footer__input" placeholder="Phone Number*">
             <textarea class="footer__message" placeholder="Message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -637,9 +650,9 @@
       <!-- /.footer-wrapper -->
       <div class="footer-bottom">
         <div class="footer-bottom__info">
-          <span clas="footer-bottom__info-text">Disclaimer</span>
-          <span clas="footer-bottom__info-text">Conditions of use</span>
-          <span clas="footer-bottom__info-text">Cancellation policy</span>
+          <span class="footer-bottom__info-text">Disclaimer</span>
+          <span class="footer-bottom__info-text">Conditions of use</span>
+          <span class="footer-bottom__info-text">Cancellation policy</span>
         </div>
         <!-- /.footer-bottom__info -->
         <img class="footer-bottom__img" src="img/footer-img.png" alt="icon pay platform ">

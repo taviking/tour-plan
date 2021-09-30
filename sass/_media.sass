@@ -101,23 +101,69 @@
       grid-column: span 2
     &__legal
       grid-column: span 2
-      // grid-row: 2/3
     &__contact
       &-details
         grid-row: 3
-        grid-column: span 6
+        grid-column: span 5
       &-form
         grid-row: 4
-        grid-column: span 6
+        grid-column: span 5
     &-bottom
       padding-left: 0
 @media (max-width: 768px)
   .container
     max-width: 576px
     width: 89%
+  body
+    padding-top: 70px
   .navbar
-    &__search, &-menu, &__user
+    &--fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 1000
+    
+    &__user, &__search
+      margin: 0
+      &--mobile
+        &-hidden
+          display: none
+        &-visible
+          display: flex
+    .user
+      &__name
+        &--light
+          color: $light
+          margin: 10px 0 10px
+    &__user
+      flex-direction: column
+      justify-content: center
+    &__search
+        &--mobile
+          &-visible
+            // flex-basis: 90%
+            max-width: 250px
+            margin-bottom: 19px
+    &-menu
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 70px
+      padding-top: 30px
+      &__list
+        flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &-visible
+            
+            display: flex
+      &--visible
+        display: block
+
   .menu
     &-button
       padding: 0

@@ -45,3 +45,9 @@ else {
   })
 }
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function () {
+  console.log("клик по кнопке меню");
+  document.querySelector(".navbar-menu").classList.toggle('navbar-menu--visible');
+});
