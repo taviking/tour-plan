@@ -13,6 +13,15 @@
   .card
     width: 230px
     height: 230px
+  .item
+    &__info
+      &--popular
+        padding: 30px 19px 0px 20px
+  .activities
+    padding: 58px 0 52px
+    &__title
+      &--mb-4
+        margin-top: 0
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -35,6 +44,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 55px
     &-grid
       flex-direction: column
     &__slider
@@ -47,7 +57,17 @@
     width: 340px
   .map
     width: 340px
+  .packages
+    &-list
+      grid-template-columns: 1fr 1fr
+  .newslatter
+    padding: 94px 0 87px 0
   .reviews
+    padding: 40px 0 60px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin: 0 0 53px
     &-slider
       &__item
         max-width: 580px
@@ -59,6 +79,38 @@
   .card
     width: 340px
     height: 255px
+  .footer
+    padding: 40px 0 33px
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-gap: 20px
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+      max-width: 96px
+      max-height: 107px
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2/3
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+      // grid-row: 2/3
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 6
+      &-form
+        grid-row: 4
+        grid-column: span 6
+    &-bottom
+      padding-left: 0
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -111,6 +163,39 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 40px
+    &-list
+      grid-template-columns: 1fr
+    &__item
+      max-width: 100%
+      max-height: 504px
+      &--popular
+        flex-direction: column
+        grid-column: 1
+  .item
+    &__offer
+      padding: 8px 22px 7px 11px
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+    &__picture
+      width: 100%
+      &--popular
+        height: 250px
+    &__info
+      &--popular
+        width: 100%
+    &__stars
+      display: none
+    &__description
+      display: none
+    &__price
+      &--popular
+        margin-top: 0
   .newsletter
     &-wrapper
       max-width: 576px
@@ -121,9 +206,6 @@
       &__strong
         margin-bottom: 37px
   .reviews
-    &__title
-      font-size: 30px
-      line-height: 38px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -145,6 +227,9 @@
   .card
     width: 48%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 576px)
   .container
     width: 89%
@@ -167,11 +252,23 @@
           left: 6px
     &__slider
       margin-bottom: 20px
-
   .navbar
     &-top
       padding: 26px 0
-
+  .packages
+    &__title
+      font-size: 22px
+      line-height: 24px
+  .item
+    &__picture
+      height: 195px
+    &__info
+      &--popular
+        padding: 25px 20px 0 30px
+    &__booking
+      flex-wrap: wrap
+    &__book
+      width: 100%
   .activities
     padding: 40px 0
     &__title
@@ -180,6 +277,35 @@
       margin-bottom: 36px
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-gap: 30px
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        flex-wrap: wrap
+        gap: 20px
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
 @media (max-width: 480px)
 
   .map
@@ -209,6 +335,17 @@
       font-size: 18px
       line-height: 23px
       margin: 0 40px 40px
+  .footer
+    &__button
+      order: 2
+    &__info
+      flex-basis: 100%
+      order: 1
+      margin-bottom: 15px
+    &-bottom
+      padding-top: 30px
+      flex-wrap: wrap
+      gap: 10px
 
 @media (max-width: 325px)
   .container
