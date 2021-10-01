@@ -1942,6 +1942,9 @@ iframe {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .item__title--popular {
+    margin-bottom: 23px;
+  }
   .item__offer {
     padding: 8px 22px 7px 11px;
     font-weight: 600;
@@ -1966,6 +1969,9 @@ iframe {
   }
   .item__description {
     display: none;
+  }
+  .item__parameters--popular {
+    margin-bottom: 24px;
   }
   .item__price--popular {
     margin-top: 0;
