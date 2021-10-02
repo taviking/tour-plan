@@ -1639,11 +1639,12 @@ iframe {
 }
 
 .modal__dialog {
-  overflow: auto;
+  overflow-y: auto;
   position: fixed;
   top: 50%;
   left: 50%;
-  max-width: 478px;
+  width: 478px;
+  max-height: 100vh;
   z-index: 600;
   padding: 33px 88px;
   background-color: #0A223D;
@@ -2113,6 +2114,11 @@ iframe {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog {
+    width: 87%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2285,6 +2291,20 @@ iframe {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 10px;
+  }
+  .modal__form-bottom {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .modal__form-text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 15px;
+  }
+  .modal__btn {
+    width: 100%;
   }
 }
 

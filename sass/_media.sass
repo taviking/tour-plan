@@ -286,6 +286,11 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal 
+    &__dialog 
+      width: 87%
+      padding-left: 30px
+      padding-right: 30px
 @media (max-width: 576px)
   .container
     width: 89%
@@ -364,7 +369,6 @@
         grid-row: 7
         grid-column: 1
 @media (max-width: 480px)
-
   .map
     height: 180px
   .hotel
@@ -403,7 +407,15 @@
       padding-top: 30px
       flex-wrap: wrap
       gap: 10px
-
+  .modal 
+    &__form 
+      &-bottom 
+        justify-content: flex-end
+      &-text 
+        order: -1
+        margin-bottom: 15px
+    &__btn 
+      width: 100%
 @media (max-width: 325px)
   .container
     width: 280px
