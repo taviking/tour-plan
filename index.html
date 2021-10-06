@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="favicon.ico" />
 </head>
 
 <body>
@@ -394,7 +395,7 @@
       </h2>
       <form class="subscribe newsletter__subscribe form" action="send.php" method="POST" data-aos="fade-left">
         <input class="subscribe__input" type="email" placeholder="Your email address" name="subscribe" required>
-        <button type="submit" class="subscribe__button hov">
+        <button type="submit" name="form" class="subscribe__button hov" value="subscription">
           Send
         </button>
       </form>
@@ -648,10 +649,10 @@
               <div class="footer__input-group"><input type="text" class="input footer__input"
                   placeholder="Your Full Name*" name="name" required minlength="2"></div>
               <div class="footer__input-group"><input type="tel" class="input footer__input" placeholder="Phone Number*"
-                  name="phone" required maxlength="17"></div>
+                  name="phone" required minlength="17" maxlength="17"></div>
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
-            <button class="button footer__button" type="submit">Send</button>
+            <button class="button footer__button" type="submit" value="thankyou" name="form">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
         </div>
@@ -679,10 +680,11 @@
       <h3 class="modal__title modal__title--mb-3">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required maxlength="17 ">
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="17"
+          maxlength="17 ">
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button" type="submit">Send</button>
+        <button class="button modal__button" type="submit" value="thankyou" name="form">Send</button>
         <span class="modal__info">* Required Fields</span>
       </form>
     </div>
