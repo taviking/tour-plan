@@ -44,7 +44,7 @@ else {
   speed: 0.0,
   })
 }
-});
+
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener('click', function () {
@@ -81,3 +81,31 @@ function closeModal(event){
   modalOverlay.removeClass('modal__overlay--visible');
   modalDialog.removeClass('modal__dialog--visible');
 }
+
+$('.form').each(function(){
+$(this).validate({
+  errorClass: "error",
+  messages: {
+    name: {
+      required: "Please specify your name",
+      name: "Name must be at least 2 letters"
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+      required: "We need your phone number for verification",
+    },
+    subscribe: {
+      required: "We need your email address to contact you",
+      subscribe: "Your email address must be in the format of name@domain.com"
+    },
+  },
+});
+});
+
+  $('[type="tel"]').mask("+7 (000) 000-0000");
+
+  
+});
