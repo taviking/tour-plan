@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,7 +25,7 @@
         </a>
         <form class="search navbar__search navbar__search--mobile-hidden" action="#">
           <input class="search__input" type="text" placeholder="Search Location">
-          <button class="search__button">
+          <button class="search__button hov">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
@@ -233,7 +234,7 @@
                 <strong class="price__value price__value--old">$ 10,500</strong>
                 <strong class="price__value">$ 8,500</strong>
               </p>
-              <button data-toggle="modal" class="item__book item__book--popular">Book Now</button>
+              <button data-toggle="modal" class="item__book item__book--popular hov">Book Now</button>
             </div>
             <!-- /.item__booking -->
           </div>
@@ -268,7 +269,7 @@
                 <strong class="price__value price__value--old">$ 8,500</strong>
                 <strong class="price__value">$ 3,000</strong>
               </p>
-              <button data-toggle="modal" class="item__book">Book Now</button>
+              <button data-toggle="modal" class="item__book hov">Book Now</button>
             </div>
             <!-- /.item__booking -->
           </div>
@@ -303,7 +304,7 @@
                 <strong class="price__value price__value--old">$ 10,500</strong>
                 <strong class="price__value">$ 9,500</strong>
               </p>
-              <button data-toggle="modal" class="item__book">Book Now</button>
+              <button data-toggle="modal" class="item__book hov">Book Now</button>
             </div>
             <!-- /.item__booking -->
           </div>
@@ -338,7 +339,7 @@
                 <strong class="price__value price__value--old">$ 4,500</strong>
                 <strong class="price__value">$ 2,500</strong>
               </p>
-              <button data-toggle="modal" class="item__book">Book Now</button>
+              <button data-toggle="modal" class="item__book hov">Book Now</button>
             </div>
             <!-- /.item__booking -->
           </div>
@@ -373,7 +374,7 @@
                 <strong class="price__value price__value--old">$ 6,500</strong>
                 <strong class="price__value">$ 3,500</strong>
               </p>
-              <button data-toggle="modal" class="item__book">Book Now</button>
+              <button data-toggle="modal" class="item__book hov">Book Now</button>
             </div>
             <!-- /.item__booking -->
           </div>
@@ -387,13 +388,13 @@
   </section>
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title">
+      <h2 class="newsletter-title" data-aos="fade-right">
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form class="subscribe newsletter__subscribe form" action="send.php" method="POST">
+      <form class="subscribe newsletter__subscribe form" action="send.php" method="POST" data-aos="fade-left">
         <input class="subscribe__input" type="email" placeholder="Your email address" name="subscribe" required>
-        <button type="submit" class="subscribe__button">
+        <button type="submit" class="subscribe__button hov">
           Send
         </button>
       </form>
@@ -515,32 +516,32 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up-right" data-aos-delay="200">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner
             of chamarel</h3>
-          <button data-toggle="modal" class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button hov">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up-right" data-aos-delay="100">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
-          <button data-toggle="modal" class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button hov">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up-left" data-aos-delay="100">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking
             trip - full day</h3>
-          <button data-toggle="modal" class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button hov">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up-left" data-aos-delay="200">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
             quest</h3>
-          <button data-toggle="modal" class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button hov">Book Now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -694,6 +695,7 @@
   <script src="js/parallax.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 

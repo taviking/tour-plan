@@ -55,6 +55,31 @@ img {
   color: #ffffff;
   border-radius: 4px;
   background-color: #EC1F46;
+  -webkit-transition: 1s background-color;
+  transition: 1s background-color;
+}
+
+.button:hover {
+  background-color: #0A223D;
+  outline: 2px solid #EC1F46;
+}
+
+.hov {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hov:hover {
+  background-color: #FF8C00;
+}
+
+a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #FF8C00;
 }
 
 .error {
