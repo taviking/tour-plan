@@ -107,13 +107,13 @@
             <span class="offer hotel-info__offer">Flash Offer</span>
           </div>
           <!-- /.hotel-wrapper -->
-          <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities +
+          <p class="hotel-description hotel-info__description">Half-Board / All Inclusive + Complimentary Activities +
             Child Stays Free</p>
         </div>
         <!-- /.hotel-info__text -->
         <div class="rating hotel-info__rating">
           <span class="rating__text">User rattings</span>
-          <span class="rating__counter">4.5/5</span>
+          <span class="rating__counter">4.5/<span class="rating__text">5</span></span>
         </div>
         <!-- /.hotel-info__rating -->
       </div>
@@ -211,7 +211,7 @@
               <img class="stars__item" src="img/star.svg" alt="icon: Star" />
             </div>
             <h3 class="item__title item__title--popular">Hotel Blue Haven</h3>
-            <p class="item__description">
+            <p class="item__description item__description--popular">
               Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat
               velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur
               excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
@@ -517,28 +517,28 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card" data-aos="fade-up-right" data-aos-delay="200">
+        <div class="card activities__card activities__card--corner" data-aos="fade-up-right" data-aos-delay="200">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner
-            of chamarel</h3>
+            of&nbsp;chamarel</h3>
           <button data-toggle="modal" class="card__button hov">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card" data-aos="fade-up-right" data-aos-delay="100">
+        <div class="card activities__card activities__card--golf" data-aos="fade-up-right" data-aos-delay="100">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
           <button data-toggle="modal" class="card__button hov">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card" data-aos="fade-up-left" data-aos-delay="100">
+        <div class="card activities__card activities__card--hiking" data-aos="fade-up-left" data-aos-delay="100">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking
-            trip - full day</h3>
+            trip&nbsp;- full day</h3>
           <button data-toggle="modal" class="card__button hov">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card" data-aos="fade-up-left" data-aos-delay="200">
+        <div class="card activities__card activities__card--discovery" data-aos="fade-up-left" data-aos-delay="200">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
             quest</h3>
@@ -570,7 +570,7 @@
         </div>
         <!-- /.footer__list -->
         <div class="footer__list footer__additional">
-          <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+          <h3 class="footer__title footer__title--mb-16">ADDITIONAL INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
@@ -629,15 +629,17 @@
               <div class="footer__item-wrapper">
                 <span>Tel (business hours) : <a class="footer__item-link" href="tel:2691500">269 1500</a></span><br>
                 <span>Tel (hotline) Monday&nbsp;- Saturday: <a class="footer__item-link"
-                    href="tel:52566138">52-56-61-38</a> (08:00&nbsp;am&nbsp;-20:00&nbsp;pm)</span><br>
-                <span>Tel (hotline) Sunday: <a class="footer__item-link" href="tel: 52566138">52-56-61-38</a>
-                  (08:00&nbsp;am&nbsp;- 14:00&nbsp;pm)</span><br>
+                    href="tel:52566138">52&#8209;56&#8209;61&#8209;38</a> (08:00&nbsp;am&nbsp;&#8211;
+                  20:00&nbsp;pm)</span><br>
+                <span>Tel (hotline) Sunday: <a class="footer__item-link"
+                    href="tel:52566138">52&#8209;56&#8209;61&#8209;38</a>
+                  (08:00&nbsp;am&nbsp;&#8211; 14:00&nbsp;pm)</span><br>
               </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/mail.svg" alt="icon letter">
-              </div><a class="footer__item-link" href="mailto: cherly.lawson@example.com">cherly.lawson@example.com</a>
+              </div><a class="footer__item-link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
@@ -681,10 +683,10 @@
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
         <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="17"
-          maxlength="17 ">
+          maxlength="17">
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button" type="submit" value="thankyou" name="form">Send</button>
+        <button class="button modal__button" type="submit" value="booking" name="form">Send</button>
         <span class="modal__info">* Required Fields</span>
       </form>
     </div>
